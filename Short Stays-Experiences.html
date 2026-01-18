@@ -1,0 +1,889 @@
+<!-- /*
+* Template Name: Sayari
+* Template Author: Your Name
+*/ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Your Name" />
+    <link rel="shortcut icon" href="favicon.png" />
+
+    <meta name="description" content="Sayari - Your complete home rental and real estate platform" />
+    <meta name="keywords" content="rentals, real estate, vacation homes, long-term stays" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+
+    <link rel="stylesheet" href="css/tiny-slider.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>
+      Sayari &mdash; Rent, Own, or List—All in One Place
+    </title>
+  </head>
+  <body>
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close">
+          <span class="icofont-close js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <nav class="site-nav">
+  <div class="container">
+    <div class="menu-bg-wrap">
+      <div class="site-navigation">
+        <!-- Logo with Icon -->
+        <a href="index.html" class="logo m-0 float-start">
+          <span class="d-flex align-items-center">
+            <img src="images/icon.png" alt="Sayari Logo" class="logo-icon me-2" style="height: 32px; width: auto;">
+            <span class="text-primary fw-bold fs-5">Sayari</span>
+          </span>
+        </a>
+
+        <!-- Main Navigation -->
+        <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          
+          <li class="has-children">
+            <a href="short-stays.html" class="nav-link">Short Stays</a>
+            <ul class="dropdown">
+              <li><a href="vacation-homes.html" class="dropdown-item"><i class="icon-home me-2"></i> Vacation Homes</a></li>
+              <li><a href="hotel-rooms.html" class="dropdown-item"><i class="icon-building me-2"></i> Hotel Rooms</a></li>
+              <li><a href="experiences.html" class="dropdown-item"><i class="icon-ticket me-2"></i> Experiences</a></li>
+            </ul>
+          </li>
+          
+          <li class="has-children">
+            <a href="long-term-rentals.html" class="nav-link">Long-Term Rentals</a>
+            <ul class="dropdown">
+              <li><a href="#" class="dropdown-item"><i class="icon-apartment me-2"></i> Apartments</a></li>
+              <li><a href="#" class="dropdown-item"><i class="icon-house me-2"></i> Houses</a></li>
+              <li><a href="#" class="dropdown-item"><i class="icon-school me-2"></i> Student Housing</a></li>
+            </ul>
+          </li>
+          
+          <li class="has-children">
+            <a href="real-estate.html" class="nav-link">Real Estate</a>
+            <ul class="dropdown">
+              <li><a href="#" class="dropdown-item"><i class="icon-cart me-2"></i> Buy Property</a></li>
+              <li><a href="#" class="dropdown-item"><i class="icon-cash me-2"></i> Sell Property</a></li>
+              <li><a href="#" class="dropdown-item"><i class="icon-badge me-2"></i> Find an Agent</a></li>
+            </ul>
+          </li>
+          
+          <li><a href="host.html" class="nav-link highlight"><i class="icon-star me-1"></i> Become a Host</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Auth Buttons - Desktop -->
+        <div class="d-none d-lg-flex ms-auto me-4">
+          <a href="login.html" class="btn btn-outline-primary me-2">Login</a>
+          <a href="signup.html" class="btn btn-primary">Sign Up</a>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <a href="#" class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none">
+          <span></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<style>
+  /* Custom Navbar Enhancements */
+  .logo-icon {
+    transition: transform 0.3s ease;
+  }
+  
+  .logo:hover .logo-icon {
+    transform: scale(1.1);
+  }
+  
+  .nav-link {
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .nav-link.highlight {
+    color: var(--bs-orange) !important;
+  }
+  
+  .nav-link:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--bs-primary);
+    transition: all 0.3s ease;
+  }
+  
+  .nav-link:hover:after,
+  .nav-link.active:after {
+    width: 60%;
+    left: 20%;
+  }
+  
+  .dropdown-item {
+    padding: 0.5rem 1.5rem;
+    transition: all 0.2s ease;
+  }
+  
+  .dropdown-item:hover {
+    background-color: rgba(var(--bs-primary-rgb), 0.1);
+    padding-left: 1.75rem;
+  }
+  
+  .has-children > a:after {
+    content: '\e313';
+    font-family: 'icomoon';
+    margin-left: 5px;
+    font-size: 0.8em;
+    vertical-align: middle;
+    display: inline-block;
+  }
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Add active class to current page
+  const currentPage = location.pathname.split('/').pop() || 'index.html';
+  const navLinks = document.querySelectorAll('.nav-link');
+  
+  navLinks.forEach(link => {
+    if (link.getAttribute('href') === currentPage) {
+      link.classList.add('active');
+      // Also mark parent if exists
+      const parentLi = link.closest('.has-children');
+      if (parentLi) {
+        parentLi.querySelector('> a').classList.add('active');
+      }
+    }
+  });
+  
+  // Mobile menu enhancement
+  const mobileToggle = document.querySelector('.site-menu-toggle');
+  if (mobileToggle) {
+    mobileToggle.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector('.site-navigation').classList.toggle('mobile-open');
+    });
+  }
+});
+</script>
+    <div
+      class="hero page-inner overlay"
+      style="background-image: url('images/hero_bg_1.jpg')"
+    >
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-9 text-center mt-5">
+            <h1 class="heading" data-aos="fade-up">Find Your Perfect Stay</h1>
+
+            <!-- Enhanced Search Bar with Tabs -->
+            <div class="search-tabs mt-4" data-aos="fade-up" data-aos-delay="100">
+              <ul class="nav nav-tabs justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link" href="short Stays-Vacation-Homes.html">Vacation Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Short Stays-Hotel-Rooms.html">Hotel-Rooms</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="Short Stays-Experiences.html">Experiences</a>
+                </li>
+              </ul>
+              
+              <div class="search-bar bg-white p-3 rounded-bottom shadow-sm">
+                <form>
+                  <div class="row g-2">
+                    <div class="col-md-4">
+                      <input type="text" class="form-control" placeholder="Where to?">
+                    </div>
+                    <div class="col-md-2">
+                      <input type="date" class="form-control" placeholder="Check-in">
+                    </div>
+                    <div class="col-md-2">
+                      <input type="date" class="form-control" placeholder="Check-out">
+                    </div>
+                    <div class="col-md-2">
+                      <select class="form-select">
+                        <option>1 Guest</option>
+                        <option>2 Guests</option>
+                        <option>3+ Guests</option>
+                      </select>
+                    </div>
+                    <div class="col-md-2">
+                      <button class="btn btn-primary w-100">Search</button>
+                    </div>
+                  </div>
+                  
+                  <!-- Instant Book Toggle -->
+                  <div class="form-check form-switch mt-2 text-start">
+                    <input class="form-check-input" type="checkbox" id="instantBookToggle" checked>
+                    <label class="form-check-label" for="instantBookToggle">Show Only Instant Book</label>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="container">
+        <div class="row mb-5 align-items-center">
+          <div class="col-lg-6 text-center mx-auto">
+            <h2 class="font-weight-bold text-primary heading">
+              Featured Listings
+            </h2>
+            <p class="text-muted">Discover handpicked properties for your next stay or investment</p>
+          </div>
+        </div>
+        
+        <!-- Property Filters -->
+        <div class="row mb-4">
+          <div class="col-12">
+            <div class="property-filters d-flex flex-wrap">
+              <div class="dropdown me-2 mb-2">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="propertyTypeDropdown" data-bs-toggle="dropdown">
+                  Property Type
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">All Types</a></li>
+                  <li><a class="dropdown-item" href="#">Houses</a></li>
+                  <li><a class="dropdown-item" href="#">Apartments</a></li>
+                  <li><a class="dropdown-item" href="#">Hotels</a></li>
+                  <li><a class="dropdown-item" href="#">Commercial</a></li>
+                </ul>
+              </div>
+              
+              <div class="dropdown me-2 mb-2">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="priceDropdown" data-bs-toggle="dropdown">
+                  Price Range
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Any Price</a></li>
+                  <li><a class="dropdown-item" href="#">$0 - $500</a></li>
+                  <li><a class="dropdown-item" href="#">$500 - $1,000</a></li>
+                  <li><a class="dropdown-item" href="#">$1,000 - $2,000</a></li>
+                  <li><a class="dropdown-item" href="#">$2,000+</a></li>
+                </ul>
+              </div>
+              
+              <div class="dropdown me-2 mb-2">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="amenitiesDropdown" data-bs-toggle="dropdown">
+                  Amenities
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"><i class="icon-wifi me-2"></i> WiFi</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="icon-swimming-pool me-2"></i> Pool</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="icon-car me-2"></i> Parking</a></li>
+                  <li><a class="dropdown-item" href="#"><i class="icon-paw me-2"></i> Pet Friendly</a></li>
+                </ul>
+              </div>
+              
+              <button class="btn btn-outline-primary me-2 mb-2">
+                <i class="icon-star me-1"></i> Superhosts
+              </button>
+              
+              <button class="btn btn-outline-success me-2 mb-2">
+                <i class="icon-bolt me-1"></i> Instant Book
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-12">
+            <div class="property-slider-wrap">
+              <div class="property-slider">
+                <!-- Property Item 1 with Enhanced Features -->
+                <div class="property-item" data-instant-book="true">
+                  <a href="property-single.html" class="img">
+                    <img src="images/img_1.jpg" alt="Image" class="img-fluid" />
+                    <span class="badge bg-success position-absolute top-0 end-0 m-2">Instant Book</span>
+                    <span class="badge bg-primary position-absolute top-0 start-0 m-2">$250/night</span>
+                  </a>
+
+                  <div class="property-content">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <div class="price"><span>$1,291,000</span></div>
+                      <div class="rating">
+                        <span class="icon-star text-warning"></span>
+                        <span>4.8</span>
+                        <span class="text-muted">(24)</span>
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <span class="d-block mb-2 text-black-50"
+                        >5232 California Fake, Ave. 21BC</span
+                      >
+                      <span class="city d-block mb-3">California, USA</span>
+
+                      <div class="specs d-flex mb-3">
+                        <span class="d-block d-flex align-items-center me-3">
+                          <span class="icon-bed me-2"></span>
+                          <span class="caption">2 beds</span>
+                        </span>
+                        <span class="d-block d-flex align-items-center me-3">
+                          <span class="icon-bath me-2"></span>
+                          <span class="caption">2 baths</span>
+                        </span>
+                        <span class="d-block d-flex align-items-center">
+                          <span class="icon-frame me-2"></span>
+                          <span class="caption">1,200 sqft</span>
+                        </span>
+                      </div>
+                      
+                      <!-- Transparent Pricing Breakdown -->
+                      <div class="pricing-breakdown mb-3 p-2 bg-light rounded">
+                        <div class="d-flex justify-content-between small">
+                          <span>$250 x 5 nights</span>
+                          <span>$1,250</span>
+                        </div>
+                        <div class="d-flex justify-content-between small">
+                          <span>Cleaning fee</span>
+                          <span>$75</span>
+                        </div>
+                        <div class="d-flex justify-content-between small">
+                          <span>Service fee</span>
+                          <span>$89</span>
+                        </div>
+                        <hr class="my-1">
+                        <div class="d-flex justify-content-between fw-bold">
+                          <span>Total</span>
+                          <span>$1,414</span>
+                        </div>
+                      </div>
+
+                      <div class="d-flex">
+                        <a
+                          href="property-single.html"
+                          class="btn btn-primary py-2 px-3 me-2 flex-grow-1"
+                          >See details</a
+                        >
+                        <button class="btn btn-outline-primary py-2 px-3">
+                          <span class="icon-heart"></span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- .item -->
+
+                <!-- Property Item 2 with Host Profile Preview -->
+                <div class="property-item" data-instant-book="false">
+                  <a href="property-single.html" class="img">
+                    <img src="images/img_2.jpg" alt="Image" class="img-fluid" />
+                    <span class="badge bg-info position-absolute top-0 start-0 m-2">Long-Term Rental</span>
+                  </a>
+
+                  <div class="property-content">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <div class="price"><span>$2,400/month</span></div>
+                      <div class="rating">
+                        <span class="icon-star text-warning"></span>
+                        <span>4.9</span>
+                        <span class="text-muted">(32)</span>
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <span class="d-block mb-2 text-black-50"
+                        >5232 California Fake, Ave. 21BC</span
+                      >
+                      <span class="city d-block mb-3">California, USA</span>
+
+                      <div class="specs d-flex mb-3">
+                        <span class="d-block d-flex align-items-center me-3">
+                          <span class="icon-bed me-2"></span>
+                          <span class="caption">3 beds</span>
+                        </span>
+                        <span class="d-block d-flex align-items-center me-3">
+                          <span class="icon-bath me-2"></span>
+                          <span class="caption">2 baths</span>
+                        </span>
+                        <span class="d-block d-flex align-items-center">
+                          <span class="icon-frame me-2"></span>
+                          <span class="caption">1,500 sqft</span>
+                        </span>
+                      </div>
+                      
+                      <!-- Host Profile Preview -->
+                      <div class="host-preview d-flex align-items-center mb-3 p-2 bg-light rounded">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle me-2" width="40">
+                        <div>
+                          <h6 class="mb-0">Hosted by Michael</h6>
+                          <small class="text-muted">Host since 2018 • 45+ bookings</small>
+                        </div>
+                      </div>
+
+                      <div class="d-flex">
+                        <a
+                          href="property-single.html"
+                          class="btn btn-primary py-2 px-3 me-2 flex-grow-1"
+                          >See details</a
+                        >
+                        <button class="btn btn-outline-primary py-2 px-3">
+                          <span class="icon-heart"></span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- .item -->
+
+                <!-- Property Item 3 - Real Estate Listing -->
+                <div class="property-item">
+                  <a href="property-single.html" class="img">
+                    <img src="images/img_3.jpg" alt="Image" class="img-fluid" />
+                    <span class="badge bg-danger position-absolute top-0 start-0 m-2">For Sale</span>
+                  </a>
+
+                  <div class="property-content">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <div class="price"><span>$1,291,000</span></div>
+                      <div class="text-success">
+                        <small>$1,200/sqft</small>
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <span class="d-block mb-2 text-black-50"
+                        >5232 California Fake, Ave. 21BC</span
+                      >
+                      <span class="city d-block mb-3">California, USA</span>
+
+                      <div class="specs d-flex mb-3">
+                        <span class="d-block d-flex align-items-center me-3">
+                          <span class="icon-bed me-2"></span>
+                          <span class="caption">4 beds</span>
+                        </span>
+                        <span class="d-block d-flex align-items-center me-3">
+                          <span class="icon-bath me-2"></span>
+                          <span class="caption">3.5 baths</span>
+                        </span>
+                        <span class="d-block d-flex align-items-center">
+                          <span class="icon-frame me-2"></span>
+                          <span class="caption">2,400 sqft</span>
+                        </span>
+                      </div>
+                      
+                      <!-- Real Estate Specific Features -->
+                      <div class="mb-3">
+                        <div class="d-flex justify-content-between small mb-1">
+                          <span class="text-muted">Property Type:</span>
+                          <span>Single Family Home</span>
+                        </div>
+                        <div class="d-flex justify-content-between small mb-1">
+                          <span class="text-muted">Year Built:</span>
+                          <span>2015</span>
+                        </div>
+                        <div class="d-flex justify-content-between small">
+                          <span class="text-muted">Agent:</span>
+                          <span>Sarah Johnson</span>
+                        </div>
+                      </div>
+
+                      <div class="d-flex">
+                        <a
+                          href="property-single.html"
+                          class="btn btn-primary py-2 px-3 me-2 flex-grow-1"
+                          >View Details</a
+                        >
+                        <button class="btn btn-outline-primary py-2 px-3">
+                          <span class="icon-heart"></span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- .item -->
+
+                <!-- Additional property items would follow the same pattern -->
+              </div>
+
+              <div
+                id="property-nav"
+                class="controls"
+                tabindex="0"
+                aria-label="Carousel Navigation"
+              >
+                <span
+                  class="prev"
+                  data-controls="prev"
+                  aria-controls="property"
+                  tabindex="-1"
+                  >Prev</span
+                >
+                <span
+                  class="next"
+                  data-controls="next"
+                  aria-controls="property"
+                  tabindex="-1"
+                  >Next</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Local Experiences Section -->
+    <div class="section bg-light">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-6 text-center mx-auto">
+            <h2 class="font-weight-bold text-primary heading">
+              Local Experiences
+            </h2>
+            <p class="text-muted">Book unique activities hosted by locals</p>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="activity-card card h-100">
+              <img src="https://source.unsplash.com/random/300x200/?cooking" class="card-img-top" alt="Cooking Class">
+              <div class="card-body">
+                <h5 class="card-title">Local Cooking Class</h5>
+                <p class="text-muted"><small><i class="icon-map-marker me-1"></i> 0.5 miles from downtown</small></p>
+                <p class="card-text">Learn to cook authentic local dishes with Chef Maria in her home kitchen.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$45 per person</span>
+                  <span class="badge bg-success">Instant Book</span>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-top-0">
+                <button class="btn btn-outline-primary w-100">Book Experience</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4 mb-4">
+            <div class="activity-card card h-100">
+              <img src="https://source.unsplash.com/random/300x200/?hiking" class="card-img-top" alt="Hiking Tour">
+              <div class="card-body">
+                <h5 class="card-title">Sunrise Hiking Tour</h5>
+                <p class="text-muted"><small><i class="icon-map-marker me-1"></i> 2 miles from city center</small></p>
+                <p class="card-text">Explore hidden trails with breathtaking views with local guide David.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$35 per person</span>
+                  <span class="badge bg-success">Instant Book</span>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-top-0">
+                <button class="btn btn-outline-primary w-100">Book Experience</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4 mb-4">
+            <div class="activity-card card h-100">
+              <img src="https://source.unsplash.com/random/300x200/?art" class="card-img-top" alt="Art Workshop">
+              <div class="card-body">
+                <h5 class="card-title">Street Art Workshop</h5>
+                <p class="text-muted"><small><i class="icon-map-marker me-1"></i> Downtown studio</small></p>
+                <p class="card-text">Create your own street art masterpiece with guidance from local artists.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-primary fw-bold">$60 per person</span>
+                  <span class="badge bg-warning text-dark">Host Approval</span>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-top-0">
+                <button class="btn btn-outline-primary w-100">Book Experience</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row mt-4">
+          <div class="col-12 text-center">
+            <a href="#" class="btn btn-primary">View All Experiences</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Host Community Section -->
+    <div class="section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-6 text-center mx-auto">
+            <h2 class="font-weight-bold text-primary heading">
+              Meet Our Host Community
+            </h2>
+            <p class="text-muted">Verified hosts who create memorable stays</p>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="host-card card h-100 border-0 shadow-sm">
+              <div class="card-body text-center">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle mb-3" width="100">
+                <h5>Sarah Johnson</h5>
+                <p class="text-muted">Superhost since 2019</p>
+                <div class="mb-3">
+                  <span class="icon-star text-warning"></span>
+                  <span class="icon-star text-warning"></span>
+                  <span class="icon-star text-warning"></span>
+                  <span class="icon-star text-warning"></span>
+                  <span class="icon-star text-warning"></span>
+                  <span class="ms-1">4.98 (127 reviews)</span>
+                </div>
+                <p class="mb-4">"I love sharing my city with travelers and helping them discover hidden gems!"</p>
+                <div class="d-flex justify-content-center">
+                  <span class="badge bg-light text-dark me-2"><i class="icon-home me-1"></i> 3 Properties</span>
+                  <span class="badge bg-light text-dark"><i class="icon-award me-1"></i> 2 Experiences</span>
+                </div>
+              </div>
+              <div class="card-footer bg-white text-center border-top-0">
+                <a href="#" class="btn btn-outline-primary">View Listings</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4 mb-4">
+            <div class="host-card card h-100 border-0 shadow-sm">
+              <div class="card-body text-center">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle mb-3" width="100">
+                <h5>Michael Chen</h5>
+                <p class="text-muted">Host since 2017</p>
+                <div class="mb-3">
+                  <span class="icon-star text-warning"></span>
+                  <span class="icon-star text-warning"></span>
+                  <span class="icon-star text-warning"></span>
+                  <span class="icon-star text-warning"></span>
+                  <span class="icon-star text-warning"></span>
+                  <span class="ms-1">4.95 (89 reviews)</span>
+                </div>
+                <p class="mb-4">"My goal is to make every guest feel at home in my properties."</p>
+                <div class="d-flex justify-content-center">
+                  <span class="badge bg-light text-dark me-2"><i class="icon-home me-1"></i> 5 Properties</span>
+                  <span class="badge bg-light text-dark"><i class="icon-badge me-1"></i> Verified Agent</span>
+                </div>
+              </div>
+              <div class="card-footer bg-white text-center border-top-0">
+                <a href="#" class="btn btn-outline-primary">View Listings</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4 mb-4">
+            <div class="host-card card h-100 border-0 shadow-sm">
+              <div class="card-body text-center">
+                <img src="https://randomuser.me/api/portraits/women/68.jpg" class="rounded-circle mb-3" width="100">
+                <h5>Elena Rodriguez</h5>
+                <p class="text-muted">New Host</p>
+                <div class="mb-3">
+                  <span class="icon-star text-warning"></span>
+                  <span class="icon-star text-warning"></span>
+                  <span class="icon-star text-warning"></span>
+                  <span class="icon-star text-warning"></span>
+                  <span class="icon-star-half text-warning"></span>
+                  <span class="ms-1">4.7 (15 reviews)</span>
+                </div>
+                <p class="mb-4">"Excited to welcome guests to my beautifully designed apartment in the city center."</p>
+                <div class="d-flex justify-content-center">
+                  <span class="badge bg-light text-dark me-2"><i class="icon-home me-1"></i> 1 Property</span>
+                  <span class="badge bg-light text-dark"><i class="icon-coffee me-1"></i> Food Tour</span>
+                </div>
+              </div>
+              <div class="card-footer bg-white text-center border-top-0">
+                <a href="#" class="btn btn-outline-primary">View Listing</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Become a Host CTA -->
+    <div class="section bg-primary text-white">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8">
+            <h2 class="text-white">Earn money as a Sayari host</h2>
+            <p class="text-white-50">Join thousands of hosts who are earning extra income by sharing their space.</p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a href="host.html" class="btn btn-light btn-lg">Become a Host</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>About Sayari</h3>
+              <p>Sayari is a complete platform for short-term stays, long-term rentals, and real estate transactions, connecting travelers and locals worldwide.</p>
+              
+              <h4 class="mt-4">Contact</h4>
+              <address>123 Rental Way, San Francisco, CA 94110</address>
+              <ul class="list-unstyled links">
+                <li><a href="tel:+11234567890">+1 (123) 456-7890</a></li>
+                <li><a href="mailto:hello@sayari.com">hello@sayari.com</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="col-lg-2">
+            <div class="widget">
+              <h3>Explore</h3>
+              <ul class="list-unstyled links">
+                <li><a href="#">Short Stays</a></li>
+                <li><a href="#">Long-Term Rentals</a></li>
+                <li><a href="#">Real Estate</a></li>
+                <li><a href="#">Experiences</a></li>
+                <li><a href="#">Destinations</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="col-lg-2">
+            <div class="widget">
+              <h3>Hosting</h3>
+              <ul class="list-unstyled links">
+                <li><a href="#">Become a Host</a></li>
+                <li><a href="#">Host Resources</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Safety</a></li>
+                <li><a href="#">Host Protection</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="col-lg-2">
+            <div class="widget">
+              <h3>Company</h3>
+              <ul class="list-unstyled links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Policies</a></li>
+                <li><a href="#">Help Center</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="col-lg-2">
+            <div class="widget">
+              <h3>Connect</h3>
+              <ul class="list-unstyled social">
+                <li>
+                  <a href="#"><span class="icon-instagram"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-twitter"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-facebook"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-linkedin"></span></a>
+                </li>
+              </ul>
+              
+              <div class="mt-3">
+                <h4>Download App</h4>
+                <div class="d-flex">
+                  <a href="#" class="me-2">
+                    <img src="https://via.placeholder.com/120x40?text=App+Store" alt="App Store" class="img-fluid">
+                  </a>
+                  <a href="#">
+                    <img src="https://via.placeholder.com/120x40?text=Google+Play" alt="Google Play" class="img-fluid">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-12 text-center">
+            <p class="mb-0">
+              &copy; <script>document.write(new Date().getFullYear());</script> Sayari. All rights reserved.
+              <span class="mx-2">|</span>
+              <a href="#">Terms</a>
+              <span class="mx-2">|</span>
+              <a href="#">Privacy</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Preloader -->
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/custom.js"></script>
+    
+    <!-- Custom Script for Instant Book Filter -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Instant Book Toggle Functionality
+        const instantBookToggle = document.getElementById('instantBookToggle');
+        
+        if (instantBookToggle) {
+          instantBookToggle.addEventListener('change', function() {
+            const propertyItems = document.querySelectorAll('.property-item');
+            
+            propertyItems.forEach(item => {
+              const isInstant = item.getAttribute('data-instant-book') === 'true';
+              
+              if (this.checked && !isInstant) {
+                item.style.display = 'none';
+              } else {
+                item.style.display = 'block';
+              }
+            });
+          });
+        }
+        
+        // Initialize AOS animations
+        AOS.init({
+          duration: 1000,
+          easing: 'ease-in-out',
+          once: true,
+          mirror: false
+        });
+      });
+    </script>
+  </body>
+</html>
