@@ -1,0 +1,17 @@
+/* Hotel Rating Stars */
+.hotel-rating {
+  color: #FFC107;
+}
+
+/* Room Type Indicators */
+.room-type-badge {
+  background-color: #6c757d;
+  color: white;
+  font-size: 0.75rem;
+}
+
+/* Cancellation Policy */
+.free-cancellation {
+  color: #28a745;
+  font-weight: 500;
+}
